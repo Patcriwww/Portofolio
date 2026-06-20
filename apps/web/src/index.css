@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  :root,
+  [data-theme="dracula"] {
+    --background: 231 15% 18%;
+    --foreground: 60 30% 96%;
+    --card: 232 14% 22%;
+    --card-foreground: 60 30% 96%;
+    --popover: 232 14% 22%;
+    --popover-foreground: 60 30% 96%;
+    --primary: 265 89% 78%;
+    --primary-foreground: 232 14% 12%;
+    --secondary: 232 14% 26%;
+    --secondary-foreground: 60 30% 96%;
+    --muted: 232 14% 26%;
+    --muted-foreground: 232 14% 70%;
+    --destructive: 0 100% 67%;
+    --destructive-foreground: 60 30% 96%;
+    --border: 232 14% 30%;
+    --input: 232 14% 30%;
+    --ring: 265 89% 78%;
+    --radius: 0.5rem;
+    --sidebar-background: 232 14% 22%;
+    --sidebar-foreground: 60 30% 96%;
+    --sidebar-primary: 265 89% 78%;
+    --sidebar-primary-foreground: 232 14% 12%;
+    --sidebar-accent: 232 14% 26%;
+    --sidebar-accent-foreground: 60 30% 96%;
+    --sidebar-border: 232 14% 30%;
+    --sidebar-ring: 265 89% 78%;
+
+    --accent: #BD93F9;
+
+    --chrome-bg: #21222C;
+    --chrome-fg: #F8F8F2;
+    --chrome-fg-muted: #9CA3AF;
+    --chrome-fg-faint: #6B7280;
+    --chrome-border: #2F3140;
+    --chrome-border-strong: #44475A;
+    --chrome-hover: rgba(255, 255, 255, 0.04);
+    --chrome-hover-strong: rgba(255, 255, 255, 0.10);
+    --chrome-active: rgba(189, 147, 249, 0.14);
+    --chrome-titlebar: #1E1F29;
+    --chrome-activitybar: #1A1B23;
+    --chrome-sidebar: #1E1F29;
+    --chrome-tabbar: #1A1B23;
+    --chrome-tab-bg: #1A1B23;
+    --chrome-tab-active: #282A36;
+    --chrome-terminal: #191A21;
+    --chrome-statusbar: #44475A;
+    --chrome-statusbar-fg: #F8F8F2;
+
+    --syntax-bg: #282A36;
+    --syntax-fg: #F8F8F2;
+    --syntax-line-number: #4B5063;
+    --syntax-line-hover: rgba(255, 255, 255, 0.025);
+    --syntax-comment: #6272A4;
+    --syntax-keyword: #FF79C6;
+    --syntax-string: #F1FA8C;
+    --syntax-number: #BD93F9;
+    --syntax-fn: #50FA7B;
+    --syntax-type: #8BE9FD;
+    --syntax-const: #FFB86C;
+    --syntax-attr: #50FA7B;
+    --syntax-tag: #FF79C6;
+    --syntax-punct: #C9CED8;
+    --syntax-heading: #BD93F9;
+    --syntax-bold: #FFB86C;
+    --syntax-italic: #F1FA8C;
+    --syntax-link: #8BE9FD;
+  }
+
+  [data-theme="github"] {
+    --background: 0 0% 100%;
+    --foreground: 215 14% 19%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 14% 19%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 14% 19%;
+    --primary: 212 92% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 215 14% 19%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 215 14% 40%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 215 14% 90%;
+    --input: 215 14% 90%;
+    --ring: 212 92% 45%;
+
+    --accent: #0969DA;
+
+    --chrome-bg: #F6F8FA;
+    --chrome-fg: #1F2328;
+    --chrome-fg-muted: #57606A;
+    --chrome-fg-faint: #8C959F;
+    --chrome-border: #D0D7DE;
+    --chrome-border-strong: #B6BDC4;
+    --chrome-hover: rgba(0, 0, 0, 0.04);
+    --chrome-hover-strong: rgba(0, 0, 0, 0.08);
+    --chrome-active: rgba(9, 105, 218, 0.10);
+    --chrome-titlebar: #EAEEF2;
+    --chrome-activitybar: #EAEEF2;
+    --chrome-sidebar: #F6F8FA;
+    --chrome-tabbar: #EAEEF2;
+    --chrome-tab-bg: #EAEEF2;
+    --chrome-tab-active: #FFFFFF;
+    --chrome-terminal: #FFFFFF;
+    --chrome-statusbar: #0969DA;
+    --chrome-statusbar-fg: #FFFFFF;
+
+    --syntax-bg: #FFFFFF;
+    --syntax-fg: #1F2328;
+    --syntax-line-number: #BBC4CE;
+    --syntax-line-hover: rgba(0, 0, 0, 0.025);
+    --syntax-comment: #6E7781;
+    --syntax-keyword: #CF222E;
+    --syntax-string: #0A3069;
+    --syntax-number: #0550AE;
+    --syntax-fn: #8250DF;
+    --syntax-type: #953800;
+    --syntax-const: #0550AE;
+    --syntax-attr: #116329;
+    --syntax-tag: #116329;
+    --syntax-punct: #57606A;
+    --syntax-heading: #0550AE;
+    --syntax-bold: #1F2328;
+    --syntax-italic: #6E7781;
+    --syntax-link: #0969DA;
+  }
+
+  [data-theme="solarized"] {
+    --background: 192 100% 11%;
+    --foreground: 44 87% 94%;
+    --card: 192 95% 14%;
+    --card-foreground: 44 87% 94%;
+    --popover: 192 95% 14%;
+    --popover-foreground: 44 87% 94%;
+    --primary: 175 59% 40%;
+    --primary-foreground: 192 100% 11%;
+    --secondary: 192 81% 19%;
+    --secondary-foreground: 44 87% 94%;
+    --muted: 192 81% 19%;
+    --muted-foreground: 186 8% 55%;
+    --destructive: 1 71% 52%;
+    --destructive-foreground: 44 87% 94%;
+    --border: 192 81% 24%;
+    --input: 192 81% 24%;
+    --ring: 175 59% 40%;
+
+    --accent: #2AA198;
+
+    --chrome-bg: #002B36;
+    --chrome-fg: #EEE8D5;
+    --chrome-fg-muted: #93A1A1;
+    --chrome-fg-faint: #586E75;
+    --chrome-border: #073642;
+    --chrome-border-strong: #094352;
+    --chrome-hover: rgba(238, 232, 213, 0.05);
+    --chrome-hover-strong: rgba(238, 232, 213, 0.10);
+    --chrome-active: rgba(42, 161, 152, 0.18);
+    --chrome-titlebar: #001E26;
+    --chrome-activitybar: #001E26;
+    --chrome-sidebar: #002B36;
+    --chrome-tabbar: #001E26;
+    --chrome-tab-bg: #001E26;
+    --chrome-tab-active: #073642;
+    --chrome-terminal: #001A22;
+    --chrome-statusbar: #073642;
+    --chrome-statusbar-fg: #EEE8D5;
+
+    --syntax-bg: #002B36;
+    --syntax-fg: #EEE8D5;
+    --syntax-line-number: #586E75;
+    --syntax-line-hover: rgba(238, 232, 213, 0.03);
+    --syntax-comment: #586E75;
+    --syntax-keyword: #859900;
+    --syntax-string: #2AA198;
+    --syntax-number: #D33682;
+    --syntax-fn: #268BD2;
+    --syntax-type: #B58900;
+    --syntax-const: #CB4B16;
+    --syntax-attr: #268BD2;
+    --syntax-tag: #DC322F;
+    --syntax-punct: #93A1A1;
+    --syntax-heading: #B58900;
+    --syntax-bold: #EEE8D5;
+    --syntax-italic: #93A1A1;
+    --syntax-link: #268BD2;
+  }
+
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    background-color: var(--chrome-titlebar);
+    color: var(--chrome-fg);
+    overflow: hidden;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: var(--accent);
+    color: var(--chrome-titlebar);
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--chrome-border-strong);
+  border: 3px solid var(--syntax-bg);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--chrome-fg-muted);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--chrome-border-strong) transparent;
+}
