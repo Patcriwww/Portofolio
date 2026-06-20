@@ -5,11 +5,13 @@ import HomePage from './pages/HomePage.jsx';
 import { ThemeProvider } from '@/hooks/use-theme.jsx';
 import { WorkspaceProvider } from '@/hooks/use-workspace.jsx';
 
+const routerBasename = import.meta.env.BASE_URL === '/' ? undefined : import.meta.env.BASE_URL;
+
 function App() {
   return (
     <ThemeProvider>
       <WorkspaceProvider>
-        <Router>
+        <Router basename={routerBasename}>
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<HomePage />} />
