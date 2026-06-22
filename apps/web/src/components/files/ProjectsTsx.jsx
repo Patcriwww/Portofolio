@@ -59,6 +59,10 @@ export default function ProjectsTsx() {
       <Quote>maintained</Quote>
       <P>{' | '}</P>
       <Quote>archived</Quote>
+      <P>; </P>
+      <V>repo</V>
+      <P>: </P>
+      <T>string</T>
       <P>;</P>
     </>,
   );
@@ -161,6 +165,14 @@ export default function ProjectsTsx() {
         <P>{'>'}</P>
       </>,
     );
+    if (p.repo) {
+      lines.push(
+        <>
+          <Indent n={4} />
+          <MdLink href={p.repo}>view on GitHub ↗</MdLink>
+        </>,
+      );
+    }
     lines.push(
       <>
         <Indent n={3} />

@@ -137,7 +137,7 @@ export const cv = {
       description:
         'Built a machine learning model using Python and scikit-learn to predict student graduation outcomes.',
       url: '',
-      repo: '',
+      repo: 'https://github.com/Patcriwww/Sistem-Prediksi-Kelulusan-Mahasiswa-Menggunakan-AI-Machine-Learning.git',
       stack: ['Python', 'scikit-learn'],
       year: 2025,
       status: 'completed',
@@ -148,7 +148,7 @@ export const cv = {
       description:
         'Developed a machine learning model to generate and rank business ideas using classification and clustering algorithms.',
       url: '',
-      repo: '',
+      repo: 'https://github.com/Patcriwww/Prediksi-Ide-Usaha-Profesional-Berbasis-Machine-Learning.git',
       stack: ['Python', 'Machine Learning'],
       year: 2025,
       status: 'completed',
@@ -159,7 +159,7 @@ export const cv = {
       description:
         'Full-stack web application built using Laravel and MySQL.',
       url: '',
-      repo: '',
+      repo: 'https://github.com/Patcriwww/Web-Design-BisaLearning.git',
       stack: ['Laravel', 'PHP', 'MySQL'],
       year: 2025,
       status: 'completed',
@@ -170,7 +170,7 @@ export const cv = {
       description:
         'Mobile application for canteen food ordering services.',
       url: '',
-      repo: '',
+      repo: 'https://github.com/Patcriwww/DeliveryFood-Mobile-Apps.git',
       stack: ['Mobile App'],
       year: 2025,
       status: 'completed',
@@ -181,7 +181,7 @@ export const cv = {
       description:
         'Web platform promoting agrotourism destinations across West Java.',
       url: 'https://agrowisatajabar.com',
-      repo: '',
+      repo: 'https://github.com/MuhRidwaan/agrowisata-bandung.git',
       stack: ['PHP', 'Laravel', 'MySQL'],
       year: 2025,
       status: 'live',
@@ -192,7 +192,7 @@ export const cv = {
       description:
         'Tourism information platform showcasing local attractions and products.',
       url: 'https://desawisatacipada.com',
-      repo: '',
+      repo: 'https://github.com/MuhRidwaan/web_desa_cipada.git',
       stack: ['PHP', 'Laravel', 'MySQL'],
       year: 2025,
       status: 'live',
@@ -203,10 +203,43 @@ export const cv = {
       description:
         'Web-based tourism platform supporting destination information and visitor services.',
       url: 'https://capolagago.wuaze.com',
-      repo: '',
+      repo: 'https://github.com/MuhRidwaan/web-capolagago.git',
       stack: ['PHP', 'Laravel', 'MySQL'],
       year: 2025,
       status: 'live',
+    },
+    {
+      name: 'Smart Interactive Bedroom Showcase',
+      tagline: 'Interactive 3D Room Visualization',
+      description:
+        'Interactive 3D/AR showcase for visualizing a bedroom layout in the browser.',
+      url: '',
+      repo: 'https://github.com/Patcriwww/Smart-Interactive-Bedroom-Showcase.git',
+      stack: ['Three.js', 'WebGL', 'JavaScript'],
+      year: 2025,
+      status: 'completed',
+    },
+    {
+      name: 'Modular Blockchain sebagai Integrity Layer untuk Cloud-Data',
+      tagline: 'Blockchain-based Data Integrity Layer for Cloud Storage',
+      description:
+        'Research project implementing a modular blockchain layer to verify data integrity for cloud-stored data.',
+      url: '',
+      repo: 'https://github.com/Patcriwww/Modular-Blockchain-sebagai-Integrity-Layer-untuk-Cloud-Data.git',
+      stack: ['Blockchain', 'Python', 'Cryptography'],
+      year: 2025,
+      status: 'completed',
+    },
+    {
+      name: 'Secure Document Vault dengan Multi-File Hybrid Encryption (AES–RSA)',
+      tagline: 'Hybrid AES-RSA Encrypted File Storage System',
+      description:
+        'Secure document vault using hybrid AES-RSA encryption to protect multiple files at once.',
+      url: '',
+      repo: 'https://github.com/Patcriwww/UJI-SISTEM-SECURE-DOCUMENT-VAULT-DENGAN-MULTU-FILE-HYBRID-ENCRYPTION-AES-RSA-.git',
+      stack: ['Python', 'AES', 'RSA', 'Cryptography'],
+      year: 2025,
+      status: 'completed',
     },
   ],
 
