@@ -1,4 +1,4 @@
 {
   "installCommand": "npm ci",
-  "outputDirectory": "../../dist/apps/web"
+  "outputDirectory": "dist/apps/web"
 }
