@@ -1,6 +1,6 @@
 import React from 'react';
 import CodeView from '@/components/editor/CodeView.jsx';
-import { S, N, P, A, C, Indent } from '@/components/editor/tokens.jsx';
+import { S, N, P, A, C, Indent, MdLink } from '@/components/editor/tokens.jsx';
 import { cv, FILES } from '@/data/cv.js';
 
 const file = FILES.find((f) => f.id === 'education');
@@ -63,6 +63,17 @@ export default function EducationYml() {
       </>,
     );
     lines.push(<Field name="year" value={cert.year} isNumber indent={2} />);
+    if (cert.url) {
+      lines.push(
+        <>
+          <Indent n={2} />
+          <A>url</A>
+          <P>: </P>
+          <MdLink href={cert.url}>view certificate ↗</MdLink>
+        </>,
+      );
+    }
+    lines.push(<></>);
   });
 
   return (

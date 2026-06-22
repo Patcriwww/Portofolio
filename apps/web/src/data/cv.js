@@ -64,22 +64,27 @@ export const cv = {
     {
       name: 'Intro to Machine Learning - Kaggle Learn',
       year: '2025',
+      url: '/certificates/kaggle-intro-to-machine-learning.png',
     },
     {
       name: 'Python - Kaggle Learn',
       year: '2025',
+      url: '/certificates/kaggle-python.png',
     },
     {
       name: 'Intro to Deep Learning - Kaggle Learn',
       year: '2025',
+      url: '/certificates/kaggle-intro-to-deep-learning.png',
     },
     {
       name: 'Red Hat System Administration I (RH124)',
       year: '2025',
+      url: '/certificates/redhat-rh124.jpg',
     },
     {
       name: 'Red Hat System Administration II (RH134)',
       year: '2025',
+      url: '/certificates/redhat-rh134.jpg',
     },
   ],
 
