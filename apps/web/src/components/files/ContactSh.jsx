@@ -70,7 +70,7 @@ export default function ContactSh() {
   lines.push(<></>);
   lines.push(
     <>
-      <F>echo</F><Quote>CCurrently open to: internship and junior-level opportunities in software development and networking.</Quote>
+      <F>echo</F><Quote>Currently open to: internship and junior-level opportunities in software development and networking.</Quote>
     </>,
   );
   lines.push(

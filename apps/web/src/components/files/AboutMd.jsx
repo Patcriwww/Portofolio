@@ -13,9 +13,16 @@ export default function AboutMd() {
       <MdH1># {identity.name}</MdH1>
       <></>
       <span>
-        <MdItalic>{identity.role}</MdItalic> · {identity.location} ·{' '}
-        <MdLink href="mailto:fahryreyhanantoni@gmail.com">fahryreyhanantoni@gmail.com</MdLink>
+        <MdItalic>{identity.role}</MdItalic> 
+      </span>  
+      <span>
+        · 📍 {identity.location} ·
       </span>
+      <span>
+        · ✉{' '} 
+        <MdLink href="mailto:fahryreyhanantoni@gmail.com">fahryreyhanantoni@gmail.com</MdLink> ·
+      </span>
+      <></>
       <span>
         {'> '}
         <MdItalic>{identity.tagline}</MdItalic>
