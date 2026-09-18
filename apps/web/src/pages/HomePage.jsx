@@ -52,7 +52,7 @@ const HomePage = () => {
 
             <div
               ref={scrollerRef}
-              className="flex-1 overflow-y-auto"
+              className="code-scroll flex-1 overflow-x-scroll overflow-y-auto [scrollbar-gutter:stable]"
             >
               {openTabs.map((id) => {
                 const Section = sectionMap[id];

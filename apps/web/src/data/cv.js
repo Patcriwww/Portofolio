@@ -2,8 +2,8 @@ export const cv = {
   identity: {
     name: 'Fachri Reyhan',
     handle: 'Fachri Reyhan',
-    role: 'Software Developer | Machine Learning Enthusiast | Network & IT Infrastructure',
-    tagline: 'Building software, machine learning solutions, and network infrastructure.',
+    role: 'Software Developer | Full-Stack Web Development | Network & IT Infrastructure',
+    tagline: 'Building software, intelligent solutions, and network infrastructure.',
     location: 'Depok, West Java, Indonesia',
     timezone: 'Asia/Jakarta',
     available: true,
@@ -13,10 +13,7 @@ export const cv = {
   },
 
   about: [
-    'Final-year Informatics student at Universitas Al-Azhar Indonesia with experience in full-stack web development, machine learning, and network engineering.',
-    'Skilled in PHP Laravel, Python, MySQL, REST API development, and network infrastructure maintenance.',
-    'Completed a 6-month internship as Network Engineer at PT Telekomunikasi Indonesia, working with routers, switches, and fiber optic testing tools.',
-    'Passionate about software engineering, artificial intelligence, and continuous learning in technology.',
+    'Final-year Informatics student at Universitas Al-Azhar Indonesia with experience in full-stack web development, machine learning, and network engineering. Skilled in PHP Laravel, Python, MySQL, REST API development, and network infrastructure maintenance. Completed a 6-month internship as Network Engineer at PT Telekomunikasi Indonesia, working with routers, switches, and fiber optic testing tools. Passionate about software engineering, artificial intelligence, and continuous learning in technology.',
   ],
 
   currently: [
@@ -246,7 +243,6 @@ export const cv = {
   contact: {
     email: 'fahryreyhanantoni@gmail.com',
     phone: '+62 821-1004-1389',
-    calendar: '',
     location: 'Depok, West Java, Indonesia',
   },
 

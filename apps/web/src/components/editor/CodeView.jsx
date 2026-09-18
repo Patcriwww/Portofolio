@@ -18,7 +18,7 @@ const FileIcon = ({ ext }) => (
   </span>
 );
 
-export default function CodeView({ id, file, children, footer }) {
+export default function CodeView({ id, file, children, footer, wrapLines = false }) {
   const lines = useMemo(() => React.Children.toArray(children), [children]);
   const ext = file.icon;
   const breadcrumbs = file.path.split('/');
@@ -45,7 +45,11 @@ export default function CodeView({ id, file, children, footer }) {
             <span className="select-none w-12 pr-3 pl-4 text-right text-[var(--syntax-line-number)] tabular-nums shrink-0">
               {idx + 1}
             </span>
-            <span className="flex-1 whitespace-pre-wrap break-words pr-6 text-[var(--syntax-fg)]">
+            <span
+              className={wrapLines
+                ? 'flex-1 whitespace-pre-wrap break-words pr-6 text-[var(--syntax-fg)]'
+                : 'min-w-max whitespace-pre pr-6 text-[var(--syntax-fg)]'}
+            >
               {node || '\u00A0'}
             </span>
           </div>

@@ -9,7 +9,7 @@ export default function AboutMd() {
   const { identity, about, currently, stats } = cv;
 
   return (
-    <CodeView id="about" file={file} footer={`${stats.length} stats · markdown · ${about.length + currently.length} lines of prose`}>
+    <CodeView id="about" file={file} wrapLines footer={`${stats.length} stats · markdown · ${about.length + currently.length} lines of prose`}>
       <MdH1># {identity.name}</MdH1>
       <></>
       <span>
@@ -32,9 +32,7 @@ export default function AboutMd() {
       <></>
       <MdH2>## About</MdH2>
       <></>
-      {about.map((p, i) => (
-        <span key={`p-${i}`}>{p}</span>
-      ))}
+      <p>{cv.about}</p>
       <></>
       <MdH2>## Currently</MdH2>
       <></>

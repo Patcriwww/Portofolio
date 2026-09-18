@@ -28,13 +28,6 @@ export default function ContactSh() {
   );
   lines.push(
     <>
-      <V>CALENDAR</V>
-      <P>=</P>
-      <Quote>{contact.calendar}</Quote>
-    </>,
-  );
-  lines.push(
-    <>
       <V>LOCATION</V>
       <P>=</P>
       <Quote>{contact.location}</Quote>
@@ -49,13 +42,6 @@ export default function ContactSh() {
       <S>"</S>
     </>,
   );
-  lines.push(
-    <>
-      <F>open</F> <S>"</S>
-      <MdLink href={contact.calendar}>{contact.calendar}</MdLink>
-      <S>"</S> <C># 20-min intro call</C>
-    </>,
-  );
   lines.push(<></>);
   lines.push(<C># Find me online</C>);
   social.forEach((s) => {
@@ -63,14 +49,14 @@ export default function ContactSh() {
       <>
         <F>open</F> <S>"</S>
         <MdLink href={s.url}>{s.url.replace(/^https?:\/\//, '')}</MdLink>
-        <S>"</S> <C># {s.label}</C>
+        <S>"</S> <C>#{s.label}</C>
       </>,
     );
   });
   lines.push(<></>);
   lines.push(
     <>
-      <F>echo</F><Quote>Currently open to: internship and junior-level opportunities in software development and networking.</Quote>
+      <F>echo</F> <Quote>Currently open to: internship and junior-level opportunities in software development and networking.</Quote>
     </>,
   );
   lines.push(

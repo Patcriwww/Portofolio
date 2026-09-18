@@ -264,6 +264,30 @@
   background: transparent;
 }
 
+/* Slim, editor-style horizontal scrollbar for long code lines. */
+.code-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #6b6b72 #252734;
+}
+
+.code-scroll::-webkit-scrollbar {
+  height: 10px;
+}
+
+.code-scroll::-webkit-scrollbar-track {
+  background: #252734;
+}
+
+.code-scroll::-webkit-scrollbar-thumb {
+  background: #6b6b72;
+  border: 2px solid #252734;
+  border-radius: 2px;
+}
+
+.code-scroll::-webkit-scrollbar-thumb:hover {
+  background: #8a8a91;
+}
+
 * {
   scrollbar-width: thin;
   scrollbar-color: var(--chrome-border-strong) transparent;
